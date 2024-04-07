@@ -70,7 +70,7 @@ export class TokenService {
 
       return { message: 'Token received successfully' };
     } catch (error) {
-      throw new HttpException(error, 400);
+      throw new HttpException(error.message, 400);
     }
   }
 }
